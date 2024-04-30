@@ -1,0 +1,35 @@
+name: Preparant per producció
+run-name: ${{ github.actor }} està pujant l'aplicació a PROD  🚀
+on:
+  # Triggers the workflow on push but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "Pujar-a-produccio"
+  Pujar-a-produccio:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Obtenint el codi del respositori
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        uses: actions/checkout@v4
+
+      # Runs a set of commands using the runners shell
+      - name: scp a produccio
+        run: |
+          echo Hello, world!
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          echo "${{ secrets.PROD_KEY }}" > ~/prod_key.pem
+          chmod 600 ~/prod_key.pem
+          cd ${{ github.workspace }}
+          echo "Action desplegant a produccio" > ./web/last_deploy.txt
+          date >> ./web/last_deploy.txt
+        # scp -r -o stricthostkeychecking=no -o UserKnownHostsFile=/dev/null -i "~/prod_key.pem" ./web/* ${{ secrets.PROD_USER }}@${{ secrets.PROD_HOST }}:/home/ebota/web/actions.daw.inspedralbes.cat/public_html/
+          
+      - run: echo "🍏 This job's status is ${{ job.status }}."
