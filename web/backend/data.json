@@ -1,0 +1,124 @@
+{
+  "preguntes": [
+      {
+        "id": 1,
+        "pregunta": "What does this traffic sign mean?",
+        "respostes": [
+          {
+            "id": 1,
+            "etiqueta": "End of the priority road."
+          },
+          {
+            "id": 2,
+            "etiqueta": "Begin of a priority road."
+          },
+          {
+            "id": 3,
+            "etiqueta": "Warning for a crossroad with side road on the right."
+          }
+        ],
+        "resposta_correcta": 3,
+        "imatge": "img/warning-crossroad-side-road-right.png"
+      },
+      {
+        "id": 2,
+        "pregunta": "What does this traffic sign mean?",
+        "respostes": [
+          {
+            "id": 1,
+            "etiqueta": "Turning left prohibited."
+          },
+          {
+            "id": 2,
+            "etiqueta": "Warning for a curve to the left."
+          },
+          {
+            "id": 3,
+            "etiqueta": "Mandatory left."
+          }
+        ],
+        "resposta_correcta": 3,
+        "imatge": "img/mandatory-direction-turn-left.png"
+      },
+      {
+        "id": 3,
+        "pregunta": "What does this symbol mean?",
+        "respostes": [
+          {
+            "id": 1,
+            "etiqueta": "Windshield washer fluid"
+          },
+          {
+            "id": 2,
+            "etiqueta": "Cruise control"
+          },
+          {
+            "id": 3,
+            "etiqueta": "Defrost front window."
+          }
+        ],
+        "resposta_correcta": 3,
+        "imatge": "img/window-defrost.png"
+      },
+      {
+        "id": 4,
+        "pregunta": "What does this symbol mean?",
+        "respostes": [
+          {
+            "id": 1,
+            "etiqueta": "Diesel particulate filter."
+          },
+          {
+            "id": 2,
+            "etiqueta": "Battery."
+          },
+          {
+            "id": 3,
+            "etiqueta": "Defrost front window."
+          }
+        ],
+        "resposta_correcta": 1,
+        "imatge": "img/dpf.png"
+      },
+      {
+        "id": 5,
+        "pregunta": "In this situation, what must you do to turn left?",
+        "respostes": [
+          {
+            "id": 1,
+            "etiqueta": "Stop only if there are pedestrians crossing"
+          },
+          {
+            "id": 2,
+            "etiqueta": "Stop, obeying the traffic light on the left"
+          },
+          {
+            "id": 3,
+            "etiqueta": "Drive on, obeying the traffic light on the right"
+          }
+        ],
+        "resposta_correcta": 2,
+        "imatge": "img/73ab9733aefd4ce0b547d49273c11c5b.jpg"
+      },
+      {
+        "id": 6,
+        "pregunta": "Below the permitted alcohol rates...",
+        "respostes": [
+          {
+            "id": 1,
+            "etiqueta": "an alcohol-induced accident is also possible."
+          },
+          {
+            "id": 2,
+            "etiqueta": "an alcohol-induced accident is very unlikely"
+          },
+          {
+            "id": 3,
+            "etiqueta": "an alcohol-induced accident is impossible"
+          }
+        ],
+        "resposta_correcta": 1,
+        "imatge": "img/41db3d946cb947d3070905e5eaabda7a.jpg"
+      }
+  ]
+}
